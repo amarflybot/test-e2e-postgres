@@ -22,7 +22,7 @@ before_install:
 
 install:
   - npm install
-  - docker build -t teste2epostgres/app .
+  - docker build -t testeepostgres .
 
 after_success:
   - npm run test:cov
