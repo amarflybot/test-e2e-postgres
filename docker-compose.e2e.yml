@@ -2,10 +2,8 @@ version: '3.8'
 
 services:
   app:
-    container_name: testeepostgres
     build:
       context: .
-      target: testeepostgres # only build this part of the Dockerfile (see: '... As example' )
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules # 'hack' prevents node_modules/ in the container from being overridden
