@@ -17,5 +17,5 @@ install:
   - docker build -t teste2epostgres/app .
 
 after_success:
-  - npm test:cov
+  - npm run test:cov
   - docker-compose -f docker-compose.e2e.yml up --abort-on-container-exit --exit-code-from app
