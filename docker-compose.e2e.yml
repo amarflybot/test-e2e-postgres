@@ -2,10 +2,10 @@ version: '3.8'
 
 services:
   app:
-    container_name: test-e2e
+    container_name: testeepostgres
     build:
       context: .
-      target: test-e2e # only build this part of the Dockerfile (see: '... As example' )
+      target: testeepostgres # only build this part of the Dockerfile (see: '... As example' )
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules # 'hack' prevents node_modules/ in the container from being overridden
